@@ -1,10 +1,9 @@
 {
   "data": [
     [
-      "MYSQL",
       "",
-      "'SELECT @@version",
-      "Displays version of the database"
+      "",
+      ""
     ]
   ]
 }
