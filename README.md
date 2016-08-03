@@ -1,2 +1,4 @@
 # Scrippy
 Scrippy is a Chrome and Firefox browser extension that stores SQL and XSS statments in order to aid in the testing of websites for code injections. Think cheat sheets but all you do is right click for them.  
+
+Currently the JSON payload files are the only part that is open source and free for everyone to do as they wish with them, this is due to the extension still in development and not ready to be made public. However, you can help by adding payloads to the...well payload files :) 
