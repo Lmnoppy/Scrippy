@@ -5,49 +5,6 @@
       "",
       "'SELECT @@version",
       "Displays version of the database"
-    ],
-    [
-      "MYSQL",
-      "",
-      "'SELECT user();",
-      "Shows the current user running this query, note this is different from system user."
-    ],
-    [
-      "MYSQL",
-      "",
-      "'SELECT system_user();",
-      "Shows the system user, note this is different from current user running the queries."
-    ],
-    [
-      "Oracle",
-      "",
-      "'SELECT banner FROM v$version WHERE banner LIKE ‘Oracle%’;",
-      "Displays the current version of the database."
-    ],
-    [
-      "MYSQL",
-      "",
-      "'SELECT database()",
-      "Displays the current database."
-    ],
-    [
-      "MYSQL",
-      "",
-      "'SELECT user FROM mysql.user; — priv",
-      "Lists all database users"
-    ],
-    [
-      "MYSQL",
-      "",
-      "'SELECT if(1=1,’foo’,'bar’);",
-      "If Statement - in this case if 1=1 then return foobar"
-    ],
-
-    [
-      "MYSQL, Oracle ",
-      "",
-      "'ORDER BY 999999",
-      "Tells the database to return and order all values by row number XXX"
     ]
   ]
 }
