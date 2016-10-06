@@ -35,5 +35,17 @@
       "'SELECT if(1=1,’foo’,'bar’);",
       "If Statement - in this case if 1=1 then return foobar"
     ]
+    
+    [
+      "MYSQL",
+      "'SELECT schema_name FROM information_schema.schemata;",
+      "List Databases for MySQL > v5.0"
+    ]
+    
+    [
+      "MYSQL",
+      "'SELECT distinct(db) FROM mysql.db — priv",
+      "List Databases for MySQL > v5.0"
+    ]
   ]
 }
