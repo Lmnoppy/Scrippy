@@ -44,7 +44,7 @@
     
     [
       "MYSQL",
-      "'SELECT distinct(db) FROM mysql.db — priv",
+      "'SELECT distinct(db) FROM mysql.db",
       "List Databases for MySQL > v5.0"
     ]
   ]
