@@ -3,9 +3,9 @@
     
     "name": "Scrippy",
     "version": "1.0",
-    "author": "Lmnoppy",
-    "homepage_url": "https://Lmnoppy.com/scrippy",
-    "description": "Scrippy - Right click hacks...Ok not really it just stores SQL strings for you in the browser in a simple (very basic) UI and Right click context menu. Allowing you to paste querries quickly",
+    "author": "@Lmnoppy",
+    "homepage_url": "https://Lmnoppy.com/",
+    "description": "Scrippy - Right click hacks...Ok not really it just stores statements for you in the browser using a simple (very basic) UI and Right click context menu. Allowing you to paste querries quickly",
     
     "icons": { 
            "48": "icons/padtempicon.png" 
@@ -48,8 +48,5 @@
     },
     
      "web_accessible_resources": [ 
-         "sqlpayloads.json" ],
-    
-    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAusV8evBlJhkB8PKomeNc4oECiftFV/e2A/ViHL+3P37MVduVJ8NBFA3ADh4h1ZZsf++MffASFxkWud/eBAXC+WRnw5GnlgV8OBWIFSMJTSvxlr6aQYyD40l8rCYxGkua2RE7ZT9ypF69T3Z0YerMjatcTSdebqH9AI5qjY9IW6Hs0HtZK4ztuuyLDrN0zvSEoEzaduSg7m5zRnasazW8XAClCidE8TewMHqiPQuo021SSOc2Wm8KZEz19zOaWtrEAvHhMI4E9uSfs07jhFUQfkBgJpbD3XnjZcycHo7zFFnGSdBJaf7DpIYm98obCgOEOBdduz8/1rBSfRGKF9z1pwIDAQAB"
-    
+         "sqlpayloads.json" ]
 }
