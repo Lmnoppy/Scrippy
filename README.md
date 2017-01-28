@@ -18,6 +18,7 @@ Documentation:          Start up                                                
 Refactor code:          Core code base needs to be refactored 
 
 SQL:                    Right click -> SQL -> Quick predefinded statements      - Done (although need to change the statments to more usful statements)
+
                         Right click -> SQL -> Favorite statements               - Done
                                 Set Favorites in options/popup menu page        - Done
                         Click popup menu -> SQL payloads -> list of Payloads    - Done (More paylods need to be added) 
