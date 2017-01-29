@@ -1,74 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 600px;">ang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Scrippy</title>
     <!-- CSS linked code -->
     <link href="../css/modern-menu/modern-menu.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../DataTables/datatables.min.css" />
     <!-- End CSS link code -->
 </head>
-<body>
-<!-- Start menu markup code -->
-<div id="menu">
-    <ul class="menu-top">
-        <li>
-            <a href="../popup/popup.html" class="menu-button"><span class="menu-label">Scrippy</span></a>
-        </li>
-        <li>
-            <a href="../popup/sqlinjectionpayloads.html" class="menu-button"><span class="menu-label">SQL Payloads</span></a>
-        </li>
-        <li>
-            <a href="../options/options.html" class="menu-button"><span class="menu-label">Options</span></a>
-        </li>
-        <li>
-            <a href="#" class="menu-button menu-drop"><span class="menu-label">Social</span></a>
-            <div class="menu-dropdown menu-dropdown6">
-                <ul class="menu-sub">
-                    <li><a href="http://lmnoppy.org" class="menu-subbutton"><span class="menu-label">Scrippy Website</span></a></li>
-                    <li><a href="https://twitter.com/Lmnoppy" class="menu-subbutton"><img src="../css/modern-menu/images/twitter.png"><span class="menu-label">Twitter</span></a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-</div>
-<!-- End menu markup code -->
     
-<!--Start main content -->
-<h1>SQL payloads</h1>
-<hr>
-<p><strong>To set your Favorites please go to the options tab</strong></p>
-<p align="justify">
-    <strong>Language</strong>: The database language(s) the query runs on.<br>
-    <strong>Version</strong>: The database version of the database(s) that the query works on.<br>
-    <strong>Payload</strong>: The database query statement.<br>
-    <strong>Description</strong>: Short description of what the payload does.<br></p>
+    <style>
+</style>
 
-<table id="moreSQLPayloads" class="display" width="100%" cellspacing="0">
-    <thead>
-    <tr>
-        <th>Language</th>
-        <th>version</th>
-        <th>Payload</th>
-        <th>Description</th>
-    </tr>
-    </thead>
-</table>
-
-<!--end main content -->
-
-<!--Start footer content -->
-
-<!--end footer content -->
-
-
-
-
-<!--JS code links content -->
-<script type="text/javascript" src="../jquery.js"></script>
-<script type="text/javascript" src="../DataTables/datatables.min.js"></script>
-<script type="text/javascript" src="popup.js"></script>
-<script type="text/javascript" src="../options/options.js"></script>
-<!--End JS code links content -->
+<body>
+    <!-- Start menu markup code -->
+    <div id="menu">
+        <ul class="menu-top">
+            <li> <a href="../popup/popup.html" class="menu-button"><span class="menu-label">Scrippy</span></a> </li>
+            <li> <a href="../popup/sqlinjectionpayloads.html" class="menu-button"><span class="menu-label">SQL Payloads</span></a> </li>
+            <li> <a href="../options/options.html" class="menu-button"><span class="menu-label">Options</span></a> </li>
+            <li> <a href="#" class="menu-button menu-drop"><span class="menu-label">Social</span></a>
+                <div class="menu-dropdown menu-dropdown6">
+                    <ul class="menu-sub">
+                        <li><a href="http://lmnoppy.org" class="menu-subbutton"><span class="menu-label">Scrippy Website</span></a></li>
+                        <li>
+                            <a href="https://twitter.com/Lmnoppy" class="menu-subbutton"><img src="../css/modern-menu/images/twitter.png"><span class="menu-label">Twitter</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- End menu markup code -->
+    <!--Start main content -->
+    <p><strong>To set your Favorites please go to the options tab</strong></p>
+    <p align="justify"> <strong>Language</strong>: The database language(s) the query runs on.
+        <br> <strong>Version</strong>: The database version of the database(s) that the query works on.
+        <br> <strong>Payload</strong>: The database query statement.
+        <br> <strong>Description</strong>: Short description of what the payload does.
+        <br>
+    </p>
+    <section>
+        <table id="moreSQLPayloads" class="display" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>version</th>
+                    <th>Payload</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+        </table>
+    </section>
+    
+    <!--end main content -->
+    <!--Start footer content -->
+    <!--end footer content -->
+    <!--JS code links content -->
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../DataTables/datatables.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <script type="text/javascript" src="../options/options.js"></script>
+    <!--End JS code links content -->
 </body>
+
 </html>

@@ -91,6 +91,14 @@
             "0",
 			"'SELECT @@hostname;",
 			"Hostname, IP Address"
+		],
+        
+        [
+			"MYSQL, Oracle, Sybase",
+            "0",
+			"UNION SELECT * FROM users",
+			"Data table multiple lanuage test "
 		]
+        
 	]
 }
