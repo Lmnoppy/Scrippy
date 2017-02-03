@@ -6,6 +6,10 @@
 ***************************************************************************/
 //element clicked on the current tab.
 var clickedEl = null;
+//String to be encoded
+var selectedText = null;
+//Encoded String
+var encodedText = null;
 
 /**********Quick SQL**********/
 var quickSQL1 = "'OR 1=1";
@@ -24,7 +28,6 @@ var fav2 = inputValues();
 var fav3 = inputValues();
 var fav4 = inputValues();
 var fav5 = inputValues();
-
 /***************************************************************************
  GET STORED STIRINGS/PAYLOADS FROM OPTIONS PAGE STORAGE
 
@@ -39,8 +42,7 @@ function inputValues() {
             , storedMyFav3: ''
             , storedMyFav4: ''
             , storedMyFav5: ''
-        , }
-        , //function that places the values stored in chrome.storage and puts them in the input boxes
+        , }, //function that places the values stored in chrome.storage and puts them in the input boxes
         function (items) {
             fav1 = items.storedMyFav1;
             fav2 = items.storedMyFav2;
@@ -49,7 +51,6 @@ function inputValues() {
             fav5 = items.storedMyFav5;
         });
 }
-
 /***************************************************************************
     GET RIGHT CLICKED ELEMENT
     
@@ -63,7 +64,6 @@ document.addEventListener("mousedown", function (event) {
         console.log("the event target is " + event.target + " The classname is " + clickedEl);
     }
 }, true);
-
 /***************************************************************************
     ON MESSANGER LISTENER
     
@@ -237,12 +237,16 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         document.getElementById(clickedEl).value = fav10;
     }
     else if (request.menuId == "40") {
-        //Send response to background js
         sendResponse({
             gotIt: "Got it"
         });
-        //insert string on current element
-        document.getElementById(clickedEl).value = fav1;
+        
+        getSelectionText();
+        console.log(selectedText);
+        encodeBase64();
+        document.getElementById(clickedEl).value = encodedText;
+        
+        
     }
     else {
         sendResponse({
@@ -252,9 +256,31 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 });
 
 /***************************************************************************
- * ENCODE TO URL ENCODING STANDARD
- *      Get current get highlighted string
- *      encode to base 64
+ * ENCODE
+ *      Get selected string
+ *      Encode to base 64
+ *      Encode to URL encoding
+ *      Double Encode
  *      paste over highlighted string
  *      
  * ***************************************************************************/
+
+//Get selected string
+function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+        text = window.getSelection().toString();
+    } else if (document.selection && document.selection.type != "Control") {
+        text = document.selection.createRange().text;
+    }
+    return text = selectedText;
+}
+
+//Encode to Base64
+function encodeBase64() {
+    var encodeText = selectedText;
+    console.log(encodeText);
+    //Do encoding on selected text
+    encodedText = window.btoa(encodeText);
+    console.log(encodedText);
+}

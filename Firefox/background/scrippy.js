@@ -14,12 +14,10 @@ function menuTitles() {
             , storedMyFav3Title: ''
             , storedMyFav4Title: ''
             , storedMyFav5Title: ''
-        , }
-        , //function that gets menu titles form chrome storage and sets the global vars to that value
+        , }, //function that gets menu titles form chrome storage and sets the global vars to that value
         function (items) {
             // Create context menu type variable so that its easily changed for all of them - not set currently
             var type = ["all"];
-        
             // Create Parent items 1 - 19
             browser.contextMenus.create({
                 "id": "1"
@@ -50,7 +48,6 @@ function menuTitles() {
                 , "parentId": "1"
                 , "contexts": ["all"]
             });
-        
             /**********Quick SQL 20-29**********/
             browser.contextMenus.create({
                 "id": "20"
@@ -82,7 +79,7 @@ function menuTitles() {
                 , "parentId": "2"
                 , "contexts": ["all"]
             });
-            /**********Fav SQL 30-34**********/
+            /**********Fav SQL 30-39**********/
             browser.contextMenus.create({
                 "id": "30"
                 , "title": items.storedMyFav1Title
@@ -113,9 +110,21 @@ function menuTitles() {
                 , "parentId": "3"
                 , "contexts": ["all"]
             });
+            /**********Encode 40-49**********/
+            browser.contextMenus.create({
+                "id": "40"
+                , "title": "Base64"
+                , "parentId": "4"
+                , "contexts": ["selection"]
+            });
+            browser.contextMenus.create({
+                "id": "41"
+                , "title": "Double Base64"
+                , "parentId": "4"
+                , "contexts": ["selection"]
+            });
         });
 }
-
 /***************************************************************************
     ON CLICK LISTENER - SEND MESSAGE TO CONTENT.JS 
     
