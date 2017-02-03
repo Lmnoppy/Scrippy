@@ -3,7 +3,7 @@
     "name": "Scrippy",
     "version": "1.1",
     "author": "@Lmnoppy",
-    "homepage_url": "https://Lmnoppy.com/",
+    "homepage_url": "http://scrippy.click",
     "description": "Scrippy - Right click hacks...Ok not really it just stores statements for you in the browser using a simple (very basic) UI and Right click context menu. Allowing you to paste querries quickly",
     
     "icons": { 
@@ -37,7 +37,7 @@
     {
         "run_at": "document_end",
         "matches": ["<all_urls>"],
-        "js": ["jquery.js", "content/content.js" ]
+        "js": ["DataTables/jQuery-2.2.4/jquery-2.2.4.min.js", "content/content.js" ]
     }
   ],
     
