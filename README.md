@@ -1,9 +1,9 @@
 ## Scrippy
-Scrippy is a Chrome and Firefox browser extension that stores SQL statments (more in the future) to aid in the testing of websites for code injection vulnerbulities. Think cheat sheets but all you do is right click for them.  
+Scrippy is a Chrome and Firefox browser add-on that stores SQL statements to aid in the testing of websites for code injection vulnerabilities. Think cheat sheets but all you do is right click for them.  
 
-This tool is made for web developers and pen testers that want to test sites/have legal authorisation to work on for SQL and XSS injections (and what other types of attacks get implemented into this tool). I will not be held responsible (and  for your at all in attacking websites that your not allowed and on top of that if this tool fucks up and attacks sites randomly then again i take no responsibility. 
+This tool is made for web developers, pen testers and hobbyist security researchers that want to test sites for injection vulnerabilities. You must have a legal right to do so as not having this right can lead to a criminal conviction. I/we/Scrippy take no responsibility for your actions as well as given no warranty with this product either explicit or implied. Once in a "stable" state and out of beta Scrippy will full under the GPLv3 licence for open source programs.
 
-PLease feel free to add more payloads to the ...payload files :)
+Yes updated payloads coming...one day, promise, feel free to send me some :p
 
 
 
