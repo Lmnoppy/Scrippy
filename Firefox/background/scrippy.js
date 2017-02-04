@@ -119,7 +119,13 @@ function menuTitles() {
             });
             browser.contextMenus.create({
                 "id": "41"
-                , "title": "Double Base64"
+                , "title": "URL"
+                , "parentId": "4"
+                , "contexts": ["selection"]
+            });
+            browser.contextMenus.create({
+                "id": "42"
+                , "title": "URL"
                 , "parentId": "4"
                 , "contexts": ["selection"]
             });

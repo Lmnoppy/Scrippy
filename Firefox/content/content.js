@@ -7,9 +7,9 @@
 //element clicked on the current tab.
 var clickedEl = null;
 //String to be encoded
-var selectedText = null;
+var selectedText = "";
 //Encoded String
-var encodedText = null;
+var encodedText = "";
 
 /**********Quick SQL**********/
 var quickSQL1 = "'OR 1=1";
@@ -240,13 +240,18 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         sendResponse({
             gotIt: "Got it"
         });
-        
         getSelectionText();
         console.log(selectedText);
         encodeBase64();
         document.getElementById(clickedEl).value = encodedText;
-        
-        
+    }
+    else if (request.menuId == "41") {
+        sendResponse({
+            gotIt: "Got it"
+        });
+        getSelectionText();
+        encodeURL();
+        document.getElementById(clickedEl).value = encodedText;
     }
     else {
         sendResponse({
@@ -264,23 +269,25 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
  *      paste over highlighted string
  *      
  * ***************************************************************************/
-
 //Get selected string
 function getSelectionText() {
     var text = "";
+    selectedText = "";
+    
     if (window.getSelection) {
         text = window.getSelection().toString();
     } else if (document.selection && document.selection.type != "Control") {
         text = document.selection.createRange().text;
     }
-    return text = selectedText;
+    return selectedText = text;
 }
-
 //Encode to Base64
 function encodeBase64() {
-    var encodeText = selectedText;
-    console.log(encodeText);
     //Do encoding on selected text
-    encodedText = window.btoa(encodeText);
+    encodedText = window.btoa(selectedText);
+}
+//Encode to URL
+function encodeURL() {
+    encodedText = window.btoa(selectedText);
     console.log(encodedText);
 }
