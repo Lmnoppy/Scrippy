@@ -42,12 +42,6 @@ function menuTitles() {
                 , "parentId": "1"
                 , "contexts": ["all"]
             });
-            browser.contextMenus.create({
-                "id": "5"
-                , "title": "SQL Mapper here"
-                , "parentId": "1"
-                , "contexts": ["all"]
-            });
             /**********Quick SQL 20-29**********/
             browser.contextMenus.create({
                 "id": "20"
