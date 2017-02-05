@@ -20,15 +20,15 @@ The current context menu does not allow for Scrippy to be used on the URL bar.
 
 ###### Documentation:
 Branch/code name: TealKraken
-* How to install
-* How to use
-* Examples and demos
+*   How to install
+*   How to use
+*   Examples and demos
 
 ###### UI Updated:
 Branch/code name: HelpBadlyNeeded
-* Colour Scheme (hex: TBD)
-* Logo : Needs a logo
-* Menu, popup and other UI designed better
+*   Colour Scheme (hex: TBD)
+*   Logo : Needs a logo
+*   Menu, popup and other UI designed better
 
 ###### Refactor code:
 Branch/code name: CanICodez
@@ -36,30 +36,32 @@ Core code base needs to be refactored
 
 ###### SQL:
 Branch/code name: CrimssionTide
-* ~~Right click -> SQL -> Quick predefinded statements~~ Needs more usful statements
-* ~~Right click -> SQL -> Favorite statements~~ 
-* ~~Set Favorites in options/popup menu page~~
-* ~~Click popup menu -> SQL payloads -> list of Payloads~~ 
-* Add more/better payloads to the popup menu
+*   ~~Right click -> SQL -> Quick predefinded statements~~ 
+*   ~~Right click -> SQL -> Favorite statements~~ 
+*   ~~Set Favorites in options/popup menu page~~
+*   ~~Click popup menu -> SQL payloads -> list of Payloads~~ 
+*   Add more/better payloads to the popup menu
+*    Decide what payloads should be in "quick sql" 
+
 
 ###### XSS:
 Branch/code name: XerosisScarlet
-* Right click -> XSS -> Quick predefinded statements
-* Right click -> XSS -> Favorite statements
-* Set Favorites in options/popup menu page
-* Click popup menu -> XSS payloads -> list of Payloads
+*   Right click -> XSS -> Quick predefinded statements
+*    Right click -> XSS -> Favorite statements
+*    Set Favorites in options/popup menu page
+*    Click popup menu -> XSS payloads -> list of Payloads
 
 ###### Encoding:
 Branch/code name: CrimssionTide
-* Select text -> right click it -> encode -> URL
-* Select text -> right click it -> encode -> Base64 encode
+*   ~~Select text -> right click it -> encode -> URL~~
+*   ~~Select text -> right click it -> encode -> Base64 encode~~
 
 ###### SQL Map intergration:
 Branch/code name: RedRadius
-* Right click on input -> SQL Map here -> open SQL mapper - With current element and basic command inputed.
-* Get current element 
-* Open SQL Mapper
-* Input command         
+*    Right click on input -> SQL Map here -> open SQL mapper - With current element and basic command inputed.
+*    Get current element 
+*    Open SQL Mapper
+*    Input command         
 
 
 ###### Desktop app intergration:
