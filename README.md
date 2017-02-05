@@ -12,36 +12,32 @@ The current context menu does not allow for Scrippy to be used on the URL bar.
 
 ## Install
 
-
+![](firefoxlogo.png)
 
 
 
 ## To do
 
-###### Documentation:
-
+#### Documentation:
 Branch/code name: TealKraken
 
 *   How to install
 *   How to use
 *   Examples and demos
 
-###### UI Updated:
-
+#### UI Updated:
 Branch/code name: HelpBadlyNeeded
 
 *   Colour Scheme (hex: TBD)
 *   Logo : Needs a logo
 *   Menu, popup and other UI designed better
 
-###### Refactor code:
-
+#### Refactor code:
 Branch/code name: CanICodez
 
 Core code base needs to be refactored 
 
-###### SQL:
-
+#### SQL:
 Branch/code name: CrimssionTide
 
 *   ~~Right click -> SQL -> Quick predefinded statements~~ 
@@ -52,8 +48,7 @@ Branch/code name: CrimssionTide
 *    Decide what payloads should be in "quick sql" 
 
 
-###### XSS:
-
+#### XSS:
 Branch/code name: XerosisScarlet
 
 *   Right click -> XSS -> Quick predefinded statements
@@ -61,15 +56,13 @@ Branch/code name: XerosisScarlet
 *    Set Favorites in options/popup menu page
 *    Click popup menu -> XSS payloads -> list of Payloads
 
-###### Encoding:
-
+#### Encoding:
 Branch/code name: CrimssionTide
 
 *   ~~Select text -> right click it -> encode -> URL~~
 *   ~~Select text -> right click it -> encode -> Base64 encode~~
 
-###### SQL Map intergration:
-
+#### SQL Map intergration:
 Branch/code name: RedRadius
 
 *    Right click on input -> SQL Map here -> open SQL mapper - With current element and basic command inputed.
@@ -78,5 +71,5 @@ Branch/code name: RedRadius
 *    Input command         
 
 
-###### Desktop app intergration:
+#### Desktop app intergration:
 TBD
