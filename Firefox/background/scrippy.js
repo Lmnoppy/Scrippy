@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', menuTitles);
 
 function menuTitles() {
     browser.storage.local.get({
-            storedMyFav1Title: 'Fav 1'
-            , storedMyFav2Title: 'Fav 2'
-            , storedMyFav3Title: 'Fav 3'
-            , storedMyFav4Title: 'Fav 4'
-            , storedMyFav5Title: 'Fav 5'
+            storedMyFav1Title: ''
+            , storedMyFav2Title: ''
+            , storedMyFav3Title: ''
+            , storedMyFav4Title: ''
+            , storedMyFav5Title: ''
         , }, //function that gets menu titles form chrome storage and sets the global vars to that value
         function (items) {
             // Create context menu type variable so that its easily changed for all of them - not set currently
@@ -39,12 +39,6 @@ function menuTitles() {
             browser.contextMenus.create({
                 "id": "4"
                 , "title": "Encode"
-                , "parentId": "1"
-                , "contexts": ["all"]
-            });
-            browser.contextMenus.create({
-                "id": "5"
-                , "title": "SQL Mapper here"
                 , "parentId": "1"
                 , "contexts": ["all"]
             });
