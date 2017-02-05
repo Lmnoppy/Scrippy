@@ -10,7 +10,6 @@ var clickedEl = null;
 var selectedText = "";
 //Encoded String
 var encodedText = "";
-
 /**********Quick SQL**********/
 var quickSQL1 = "'OR 1=1";
 var quickSQL2 = "'ORDER BY";
@@ -241,7 +240,6 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             gotIt: "Got it"
         });
         getSelectionText();
-        console.log(selectedText);
         encodeBase64();
         document.getElementById(clickedEl).value = encodedText;
     }
@@ -265,29 +263,36 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
  *      Get selected string
  *      Encode to base 64
  *      Encode to URL encoding
- *      Double Encode
  *      paste over highlighted string
  *      
  * ***************************************************************************/
 //Get selected string
+//http://stackoverflow.com/a/5379408/2213003
 function getSelectionText() {
     var text = "";
-    selectedText = "";
-    
-    if (window.getSelection) {
-        text = window.getSelection().toString();
-    } else if (document.selection && document.selection.type != "Control") {
-        text = document.selection.createRange().text;
+    var activeEl = document.activeElement;
+    var activeElTagName = activeEl ? activeEl.tagName.toLowerCase() : null;
+    if (
+      (activeElTagName == "textarea" || activeElTagName == "input") &&
+      /^(?:text|textarea|search|password|tel|url)$/i.test(activeEl.type) &&
+      (typeof activeEl.selectionStart == "number")
+    ) {
+        selectedText = activeEl.value.slice(activeEl.selectionStart, activeEl.selectionEnd);
+    } else if (window.getSelection) {
+        selectedText = window.getSelection().toString();
     }
-    return selectedText = text;
+    return selectedText;
 }
+
+
 //Encode to Base64
 function encodeBase64() {
     //Do encoding on selected text
     encodedText = window.btoa(selectedText);
+    return encodedText;
 }
 //Encode to URL
 function encodeURL() {
-    encodedText = window.btoa(selectedText);
-    console.log(encodedText);
+    encodedText = encodeURIComponent(selectedText);
+    return encodedText;
 }

@@ -123,12 +123,6 @@ function menuTitles() {
                 , "parentId": "4"
                 , "contexts": ["selection"]
             });
-            browser.contextMenus.create({
-                "id": "42"
-                , "title": "URL"
-                , "parentId": "4"
-                , "contexts": ["selection"]
-            });
         });
 }
 /***************************************************************************
@@ -140,7 +134,7 @@ function menuTitles() {
 // Create an on click event listener that calls a function when triggered 
 browser.contextMenus.onClicked.addListener(function (info, tab) {
     console.log("Menu item ID: " + info.menuItemId + " was clicked");
-    //console.log("info: " + JSON.stringify(info));
+    console.log("info: " + JSON.stringify(info));
     browser.tabs.query({
         active: true
         , currentWindow: true
