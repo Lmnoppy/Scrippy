@@ -7,16 +7,24 @@ Once in a "stable" state and out of beta Scrippy will fall under the GPLv3 licen
 
 Yes updated payloads coming...one day, promise, feel free to send me some :p
 
-## Current Issues
-The current context menu does not allow for Scrippy to be used on the URL bar.
-
-## Install
-
 
 ### Download and install from the [FireFox Add on market](https://addons.mozilla.org/en-US/firefox/addon/scrippy/ "Scrippy on FireFox AMO") and the chrome webstore [Chrome Webstore](https://chrome.google.com/webstore/detail/scrippy/iihdoobgnenacmgkoghchfionpnleoea "Scrippy on Chrome Extension Store")
 ![Firefox](firefoxpng.png)
 ![Chrome](chromelogo.png)
 
+Or you can follow the guide in the [Wiki](https://github.com/Lmnoppy/Scrippy/wiki "Scrippy Wiki") for manual installation and more information
+
+## How to use Scrippy
+
+// To be done, would be better if it was in the wiki
+
+## Current Issues
+The current context menu does not allow for Scrippy to be used on the URL bar.
+
+## Help
+Although i am slowly building this myself as a learning experience, i'd appreciate help in updating the payload files and would really, really like a new UI however, i just can't do it. Good UI design is just beyond me.
+
+See below for the current road map and feel free to contact me with suggestions. 
 
 ## To do
 
