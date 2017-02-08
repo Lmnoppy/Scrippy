@@ -13,9 +13,9 @@ The current context menu does not allow for Scrippy to be used on the URL bar.
 ## Install
 
 
-### Download from From [FireFox Add on market](https://addons.mozilla.org/en-US/firefox/addon/scrippy/ "Scrippy on FireFox AMO") and the chrome webstore [FireFox Add on market](https://chrome.google.com/webstore/detail/scrippy/iihdoobgnenacmgkoghchfionpnleoea "Scrippy on Chrome Extension Store")
-![firefox](firefoxlogo.png)
-![firefox](chromelogo.png)
+### Download and install from the [FireFox Add on market](https://addons.mozilla.org/en-US/firefox/addon/scrippy/ "Scrippy on FireFox AMO") and the chrome webstore [Chrome Webstore](https://chrome.google.com/webstore/detail/scrippy/iihdoobgnenacmgkoghchfionpnleoea "Scrippy on Chrome Extension Store")
+![Firefox](firefoxpng.png)
+![Chrome](chromelogo.png)
 
 
 ## To do
