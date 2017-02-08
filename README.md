@@ -12,8 +12,10 @@ The current context menu does not allow for Scrippy to be used on the URL bar.
 
 ## Install
 
-![firefox](firefoxlogo.png){:height="80px" width="300px"}.
-![firefox](chromelogo.png){:height="80px" width="300px"}.
+
+### Download from From [FireFox Add on market](https://addons.mozilla.org/en-US/firefox/addon/scrippy/ "Scrippy on FireFox AMO") and the chrome webstore [FireFox Add on market](https://chrome.google.com/webstore/detail/scrippy/iihdoobgnenacmgkoghchfionpnleoea "Scrippy on Chrome Extension Store")
+![firefox](firefoxlogo.png)
+![firefox](chromelogo.png)
 
 
 ## To do
