@@ -12,8 +12,8 @@ The current context menu does not allow for Scrippy to be used on the URL bar.
 
 ## Install
 
-![](firefoxlogo.png)
-![](chromelogo.png)
+"![](firefoxlogo.png =250x)"
+"![](chromelogo.png =250x)"
 
 
 ## To do
