@@ -12,7 +12,7 @@ Yes updated payloads coming...one day, promise, feel free to send me some :p
 ![Firefox](firefoxpng.png)
 ![Chrome](chromelogo.png)
 
-Or you can follow the guide in the [Wiki](https://github.com/Lmnoppy/Scrippy/wiki "Scrippy Wiki") for manual installation and more information
+Or you can follow the guide in our [Wiki](https://github.com/Lmnoppy/Scrippy/wiki "Scrippy Wiki") for manual installation and more information
 
 ## How to use Scrippy
 
@@ -35,7 +35,7 @@ Branch/code name: TealKraken
 *   How to use
 *   Examples and demos
 
-#### UI Updated:
+#### UI Update:
 Branch/code name: HelpBadlyNeeded
 
 *   Colour Scheme (hex: TBD)
