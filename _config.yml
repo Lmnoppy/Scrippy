@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 title: Scrippy
 description: Scrippy is a browser extension that holds sql statements to aid in the testing of websites for code injections. 
-show_downloads: false
+show_downloads: true
 google_analytics: UA-86236148-3
