@@ -31,14 +31,26 @@ function menuTitles() {
                 , "contexts": ["all"]
             });
             browser.contextMenus.create({
+                "id": "4"
+                , "title": "Quick XSS"
+                , "parentId": "1"
+                , "contexts": ["all"]
+            });
+            browser.contextMenus.create({
                 "id": "3"
                 , "title": "Fav SQL"
                 , "parentId": "1"
                 , "contexts": ["all"]
             });
             browser.contextMenus.create({
-                "id": "4"
+                "id": "6"
                 , "title": "Encode"
+                , "parentId": "1"
+                , "contexts": ["all"]
+            });
+            browser.contextMenus.create({
+                "id": "7"
+                , "title": "Decode"
                 , "parentId": "1"
                 , "contexts": ["all"]
             });
@@ -108,15 +120,63 @@ function menuTitles() {
             browser.contextMenus.create({
                 "id": "40"
                 , "title": "Base64"
-                , "parentId": "4"
+                , "parentId": "6"
                 , "contexts": ["selection"]
             });
             browser.contextMenus.create({
                 "id": "41"
                 , "title": "URL"
-                , "parentId": "4"
+                , "parentId": "6"
                 , "contexts": ["selection"]
             });
+        
+                /**********Quick XSS 50-59**********/
+            browser.contextMenus.create({
+                "id": "50"
+                , "title": "Alert"
+                , "parentId": "4"
+                , "contexts": ["all"]
+            });
+            browser.contextMenus.create({
+                "id": "51"
+                , "title": "Quick XSS 2"
+                , "parentId": "4"
+                , "contexts": ["all"]
+            });
+            browser.contextMenus.create({
+                "id": "52"
+                , "title": "Quick XSS 3"
+                , "parentId": "4"
+                , "contexts": ["all"]
+            });
+            browser.contextMenus.create({
+                "id": "53"
+                , "title": "Quick XSS 4"
+                , "parentId": "4"
+                , "contexts": ["all"]
+            });
+            browser.contextMenus.create({
+                "id": "54"
+                , "title": "Quick XSS 5"
+                , "parentId": "4"
+                , "contexts": ["all"]
+            });
+                
+            browser.contextMenus.create({
+                "id": "60"
+                , "title": "Decode Base64"
+                , "parentId": "7"
+                , "contexts": ["selection"]
+            });
+        
+            browser.contextMenus.create({
+                "id": "61"
+                , "title": "Decode URL"
+                , "parentId": "7"
+                , "contexts": ["selection"]
+            });
+        
+        
         });
 }
 /***************************************************************************
