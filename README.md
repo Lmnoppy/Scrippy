@@ -3,10 +3,9 @@ Scrippy is a Chrome and Firefox browser add-on that stores SQL statements to aid
 
 This tool is made for web developers, pen testers and hobbyist security researchers that want to test sites for injection vulnerabilities. You must have a legal right to do so as not having this right can lead to a criminal conviction. by using this tool you acknowledge that you take sole responsibility for your actions and that there is no warranty with this product either explicit or implied. 
 
-Once in a "stable" state and out of beta Scrippy will fall under the GPLv3 licence for open source programs.
+Scrippy is currently in beta and falls under the [GPLv3](http://www.gnu.org/licenses/gpl.html "GPLv3") and comes WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-Yes updated payloads coming...one day, promise, feel free to send me some :p
-
+Yes updated payloads coming...one day, promise, feel free to submit some.
 
 ### Download and install from the [FireFox Add on market](https://addons.mozilla.org/en-US/firefox/addon/scrippy/ "Scrippy on FireFox AMO") and the chrome webstore [Chrome Webstore](https://chrome.google.com/webstore/detail/scrippy/iihdoobgnenacmgkoghchfionpnleoea "Scrippy on Chrome Extension Store")
 ![Firefox](firefoxpng.png)
@@ -21,56 +20,49 @@ Or you can follow the guide in our [Wiki](https://github.com/Lmnoppy/Scrippy/wik
 ## Current Issues
 The current context menu does not allow for Scrippy to be used on the URL bar.
 
+Seems to be a bug when right clicking some input fields, the quick selections and favs do not work. [#22](https://github.com/Lmnoppy/Scrippy/issues/22 "On some input... #22")  
+
 ## Help
 Although i am slowly building this myself as a learning experience, i'd appreciate help in updating the payload files and would really, really like a new UI however, i just can't do it. Good UI design is just beyond me.
 
 See below for the current road map and feel free to contact me with suggestions. 
 
-## To do
+## On Going work
 
-#### Documentation:
-Branch/code name: TealKraken
-
-*   How to install
-*   How to use
-*   Examples and demos
+#### Refactor code:
+Core code base needs to be refactored 
 
 #### UI Update:
-Branch/code name: HelpBadlyNeeded
-
 *   Colour Scheme (hex: TBD)
 *   Logo : Needs a logo
 *   Menu, popup and other UI designed better
 
-#### Refactor code:
-Branch/code name: CanICodez
+## Next realease  
+Branch/code name: Spectre
 
-Core code base needs to be refactored 
+#### Documentation:
+*   How to install
+*   How to use
+*   Examples and demos
 
 #### SQL:
 Branch/code name: CrimssionTide
-
-*   ~~Right click -> SQL -> Quick predefinded statements~~ 
-*   ~~Right click -> SQL -> Favorite statements~~ 
-*   ~~Set Favorites in options/popup menu page~~
-*   ~~Click popup menu -> SQL payloads -> list of Payloads~~ 
 *   Add more/better payloads to the popup menu
 *    Decide what payloads should be in "quick sql" 
 
-
 #### XSS:
 Branch/code name: XerosisScarlet
-
-*   Right click -> XSS -> Quick predefinded statements
 *    Right click -> XSS -> Favorite statements
 *    Set Favorites in options/popup menu page
 *    Click popup menu -> XSS payloads -> list of Payloads
 
 #### Encoding:
-Branch/code name: CrimssionTide
+*   Extend to other types of encoding
 
-*   ~~Select text -> right click it -> encode -> URL~~
-*   ~~Select text -> right click it -> encode -> Base64 encode~~
+## Future plans
+
+#### Desktop app intergration:
+TBD
 
 #### SQL Map intergration:
 Branch/code name: RedRadius
@@ -79,7 +71,3 @@ Branch/code name: RedRadius
 *    Get current element 
 *    Open SQL Mapper
 *    Input command         
-
-
-#### Desktop app intergration:
-TBD
