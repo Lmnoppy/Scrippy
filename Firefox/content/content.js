@@ -10,6 +10,8 @@ var clickedEl = null;
 var selectedText = "";
 //Encoded String
 var encodedText = "";
+//Decode String
+var decodeText = "";
 /**********Quick SQL**********/
 var quickSQL1 = "'OR 1=1";
 var quickSQL2 = "'ORDER BY";
@@ -21,6 +23,18 @@ var quickSQL7 = "Some sort of string here";
 var quickSQL8 = "Some sort of string here";
 var quickSQL9 = "Some sort of string here";
 var quickSQL10 = "Some sort of string here";
+
+/**********Quick XSS**********/
+var quickXss1 = "<script /*%00*/>/*%00*/alert(1)/*%00*/</script /*%00*/";
+var quickXss2 = "XSS Payload";
+var quickXss3 = "XSS Payload";
+var quickXss4 = "XSS Payload";
+var quickXss5 = "XSS Payload";
+var quickXss6 = "XSS Payload";
+var quickXss7 = "XSS Payload";
+var quickXss8 = "XSS Payload";
+var quickXss9 = "XSS Payload";
+var quickXss10 = "XSS Payload";
 /**********Fav SQL**********/
 var fav1 = inputValues();
 var fav2 = inputValues();
@@ -251,6 +265,55 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         encodeURL();
         document.getElementById(clickedEl).value = encodedText;
     }
+    else if (request.menuId == "50") {
+        sendResponse({
+            gotIt: "Got it"
+        });
+        document.getElementById(clickedEl).value = quickXss1;
+    }
+        else if (request.menuId == "51") {
+        sendResponse({
+            gotIt: "Got it"
+        });
+        document.getElementById(clickedEl).value = quickXss2;
+    }
+        else if (request.menuId == "52") {
+        sendResponse({
+            gotIt: "Got it"
+        });
+        document.getElementById(clickedEl).value = quickXss3;
+    }
+        else if (request.menuId == "53") {
+        sendResponse({
+            gotIt: "Got it"
+        });
+        document.getElementById(clickedEl).value = quickXss4;
+    }
+        else if (request.menuId == "54") {
+        sendResponse({
+            gotIt: "Got it"
+        });
+        document.getElementById(clickedEl).value = quickXss5;
+    }
+    
+    else if (request.menuId == "60") {
+        sendResponse({
+            gotIt: "Got it"
+        });
+        getSelectionText();
+        decodeBase64();
+        document.getElementById(clickedEl).value = decodeText;
+    }
+    
+    else if (request.menuId == "61") {
+        sendResponse({
+            gotIt: "Got it"
+        });
+        getSelectionText();
+        decodeURL();
+        document.getElementById(clickedEl).value = decodeText;
+    }
+    
     else {
         sendResponse({
             something: "Dont got it"
@@ -295,4 +358,17 @@ function encodeBase64() {
 function encodeURL() {
     encodedText = encodeURIComponent(selectedText);
     return encodedText;
+}
+
+//Decode to Base64
+function decodeBase64() {
+    //Do encoding on selected text
+    decodeText = window.atob(selectedText);
+    return decodeText;
+}
+
+//Decode to URL
+function decodeURL() {
+    decodeText = decodeURIComponent(selectedText);
+    return decodeText;
 }
