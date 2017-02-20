@@ -46,12 +46,10 @@ Branch/code name: Spectre
 *   Examples and demos
 
 #### SQL:
-Branch/code name: CrimssionTide
 *   Add more/better payloads to the popup menu
 *    Decide what payloads should be in "quick sql" 
 
 #### XSS:
-Branch/code name: XerosisScarlet
 *    Right click -> XSS -> Favorite statements
 *    Set Favorites in options/popup menu page
 *    Click popup menu -> XSS payloads -> list of Payloads
