@@ -88,11 +88,11 @@ function inputValues() {
             fav3 = items.storedMyFav3;
             fav4 = items.storedMyFav4;
             fav5 = items.storedMyFav5;
-            fav6 = items.storedMyFav5;
-            fav7 = items.storedMyFav5;
-            fav8 = items.storedMyFav5;
-            fav9 = items.storedMyFav5;
-            fav10 = items.storedMyFav5;
+            fav6 = items.storedMyFav6;
+            fav7 = items.storedMyFav7;
+            fav8 = items.storedMyFav8;
+            fav9 = items.storedMyFav9;
+            fav10 = items.storedMyFav10;
         });
 }
 /***************************************************************************
