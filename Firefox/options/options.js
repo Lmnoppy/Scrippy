@@ -71,7 +71,7 @@ function save_options() {
         , storedMyFav8Title: Fav8Title
         , storedMyFav9Title: Fav9Title
         , storedMyFav10Title: Fav10Title
-    , }, function () {
+    }, function () {
         // Update status to let user know options were saved.
         var status = document.getElementById('status');
         status.textContent = 'Options saved.';
@@ -83,26 +83,26 @@ function save_options() {
 // Restores values stored in storage.
 function restore_options() {
     browser.storage.local.get({
-            storedMyFav1: 'Fav'
-            , storedMyFav2: 'Fav'
-            , storedMyFav3: 'Fav'
-            , storedMyFav4: 'Fav'
-            , storedMyFav5: 'Fav'
-            , storedMyFav6: 'Fav'
-            , storedMyFav7: 'Fav'
-            , storedMyFav8: 'Fav'
-            , storedMyFav9: 'Fav'
-            , storedMyFav10: 'Fav'
-            , storedMyFav1Title: 'Fav'
-            , storedMyFav2Title: 'Fav'
-            , storedMyFav3Title: 'Fav'
-            , storedMyFav4Title: 'Fav'
-            , storedMyFav5Title: 'Fav'
-            , storedMyFav6Title: 'Fav'
-            , storedMyFav7Title: 'Fav'
-            , storedMyFav8Title: 'Fav'
-            , storedMyFav9Title: 'Fav'
-            , storedMyFav10Title: 'Fav'
+            storedMyFav1: ''
+            , storedMyFav2: ''
+            , storedMyFav3: ''
+            , storedMyFav4: ''
+            , storedMyFav5: ''
+            , storedMyFav6: ''
+            , storedMyFav7: ''
+            , storedMyFav8: ''
+            , storedMyFav9: ''
+            , storedMyFav10: ''
+            , storedMyFav1Title: ''
+            , storedMyFav2Title: ''
+            , storedMyFav3Title: ''
+            , storedMyFav4Title: ''
+            , storedMyFav5Title: ''
+            , storedMyFav6Title: ''
+            , storedMyFav7Title: ''
+            , storedMyFav8Title: ''
+            , storedMyFav9Title: ''
+            , storedMyFav10Title: ''
         }, //function that places the values stored in storage and puts them in the input boxes
         function (items) {
             document.getElementById('1').value = items.storedMyFav1;
