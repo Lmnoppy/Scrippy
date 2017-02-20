@@ -1,4 +1,21 @@
 /***************************************************************************
+Copyright © 2016, 2017 Gary
+This file is part of Scrippy
+
+    Scrippy is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Scrippy is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+***************************************************************************/
+/***************************************************************************
     GLOBALY VARS
     
     *Var for element that user clicked
@@ -23,7 +40,6 @@ var quickSQL7 = "Some sort of string here";
 var quickSQL8 = "Some sort of string here";
 var quickSQL9 = "Some sort of string here";
 var quickSQL10 = "Some sort of string here";
-
 /**********Quick XSS**********/
 var quickXss1 = "<script /*%00*/>/*%00*/alert(1)/*%00*/</script /*%00*/";
 var quickXss2 = "XSS Payload";
@@ -35,12 +51,17 @@ var quickXss7 = "XSS Payload";
 var quickXss8 = "XSS Payload";
 var quickXss9 = "XSS Payload";
 var quickXss10 = "XSS Payload";
-/**********Fav SQL**********/
+/**********Favourites**********/
 var fav1 = inputValues();
 var fav2 = inputValues();
 var fav3 = inputValues();
 var fav4 = inputValues();
 var fav5 = inputValues();
+var fav6 = inputValues();
+var fav7 = inputValues();
+var fav8 = inputValues();
+var fav9 = inputValues();
+var fav10 = inputValues();
 /***************************************************************************
  GET STORED STIRINGS/PAYLOADS FROM OPTIONS PAGE STORAGE
 
@@ -55,13 +76,23 @@ function inputValues() {
             , storedMyFav3: ''
             , storedMyFav4: ''
             , storedMyFav5: ''
-        , }, //function that places the values stored in chrome.storage and puts them in the input boxes
+            , storedMyFav6: ''
+            , storedMyFav7: ''
+            , storedMyFav8: ''
+            , storedMyFav9: ''
+            , storedMyFav10: ''
+        , }, //function that places the values stored in storage and puts them in the input boxes
         function (items) {
             fav1 = items.storedMyFav1;
             fav2 = items.storedMyFav2;
             fav3 = items.storedMyFav3;
             fav4 = items.storedMyFav4;
             fav5 = items.storedMyFav5;
+            fav6 = items.storedMyFav5;
+            fav7 = items.storedMyFav5;
+            fav8 = items.storedMyFav5;
+            fav9 = items.storedMyFav5;
+            fav10 = items.storedMyFav5;
         });
 }
 /***************************************************************************
@@ -74,7 +105,6 @@ document.addEventListener("mousedown", function (event) {
     //right click
     if (event.button == 2) {
         clickedEl = event.target.id;
-        console.log("the event target is " + event.target + " The classname is " + clickedEl);
     }
 }, true);
 /***************************************************************************
@@ -271,31 +301,30 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         });
         document.getElementById(clickedEl).value = quickXss1;
     }
-        else if (request.menuId == "51") {
+    else if (request.menuId == "51") {
         sendResponse({
             gotIt: "Got it"
         });
         document.getElementById(clickedEl).value = quickXss2;
     }
-        else if (request.menuId == "52") {
+    else if (request.menuId == "52") {
         sendResponse({
             gotIt: "Got it"
         });
         document.getElementById(clickedEl).value = quickXss3;
     }
-        else if (request.menuId == "53") {
+    else if (request.menuId == "53") {
         sendResponse({
             gotIt: "Got it"
         });
         document.getElementById(clickedEl).value = quickXss4;
     }
-        else if (request.menuId == "54") {
+    else if (request.menuId == "54") {
         sendResponse({
             gotIt: "Got it"
         });
         document.getElementById(clickedEl).value = quickXss5;
     }
-    
     else if (request.menuId == "60") {
         sendResponse({
             gotIt: "Got it"
@@ -304,7 +333,6 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         decodeBase64();
         document.getElementById(clickedEl).value = decodeText;
     }
-    
     else if (request.menuId == "61") {
         sendResponse({
             gotIt: "Got it"
@@ -313,22 +341,20 @@ browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         decodeURL();
         document.getElementById(clickedEl).value = decodeText;
     }
-    
     else {
         sendResponse({
             something: "Dont got it"
         });
     }
 });
-
 /***************************************************************************
- * ENCODE
- *      Get selected string
- *      Encode to base 64
- *      Encode to URL encoding
- *      paste over highlighted string
- *      
- * ***************************************************************************/
+    ENCODE & Decode
+
+    *Get selected string
+    *Encode/Decode base64 encoding
+    *Encode/Decode URL encoding
+    *paste over highlighted string      
+****************************************************************************/
 //Get selected string
 //http://stackoverflow.com/a/5379408/2213003
 function getSelectionText() {
@@ -336,18 +362,14 @@ function getSelectionText() {
     var activeEl = document.activeElement;
     var activeElTagName = activeEl ? activeEl.tagName.toLowerCase() : null;
     if (
-      (activeElTagName == "textarea" || activeElTagName == "input") &&
-      /^(?:text|textarea|search|password|tel|url)$/i.test(activeEl.type) &&
-      (typeof activeEl.selectionStart == "number")
-    ) {
+        (activeElTagName == "textarea" || activeElTagName == "input") && /^(?:text|textarea|search|password|tel|url)$/i.test(activeEl.type) && (typeof activeEl.selectionStart == "number")) {
         selectedText = activeEl.value.slice(activeEl.selectionStart, activeEl.selectionEnd);
-    } else if (window.getSelection) {
+    }
+    else if (window.getSelection) {
         selectedText = window.getSelection().toString();
     }
     return selectedText;
 }
-
-
 //Encode to Base64
 function encodeBase64() {
     //Do encoding on selected text
@@ -359,14 +381,12 @@ function encodeURL() {
     encodedText = encodeURIComponent(selectedText);
     return encodedText;
 }
-
 //Decode to Base64
 function decodeBase64() {
     //Do encoding on selected text
     decodeText = window.atob(selectedText);
     return decodeText;
 }
-
 //Decode to URL
 function decodeURL() {
     decodeText = decodeURIComponent(selectedText);
