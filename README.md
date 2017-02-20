@@ -50,12 +50,14 @@ Branch/code name: Spectre
 *    Decide what payloads should be in "quick sql" 
 
 #### XSS:
-*    Right click -> XSS -> Favorite statements
 *    Set Favorites in options/popup menu page
 *    Click popup menu -> XSS payloads -> list of Payloads
 
 #### Encoding:
 *   Extend to other types of encoding
+
+#### Encoding:
+*   Extend Favourites from 5 to 10
 
 ## Future plans
 
