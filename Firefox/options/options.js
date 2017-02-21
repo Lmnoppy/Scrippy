@@ -21,34 +21,29 @@ This file is part of Scrippy
  *Get values (statements) that users want in their right click options
  *Save these values in the chrome.storage api using sync
  ***************************************************************************/
-//On DOM load run function restore_options - restore previous stored options
-document.addEventListener('DOMContentLoaded', restore_options);
-//On button click, run the save_options function
-document.getElementById('save').addEventListener('click', save_options);
-//save_options function  that gets values of input boxes, stores these in vars
-//and then stores them in chrome.storage as well as displaying a options saved status. 
 function save_options() {
+    "use strict";
     //vars contain the values on the input boxes
-    var Fav1 = document.getElementById('1').value;
-    var Fav2 = document.getElementById('2').value;
-    var Fav3 = document.getElementById('3').value;
-    var Fav4 = document.getElementById('4').value;
-    var Fav5 = document.getElementById('5').value;
-    var Fav6 = document.getElementById('6').value;
-    var Fav7 = document.getElementById('7').value;
-    var Fav8 = document.getElementById('8').value;
-    var Fav9 = document.getElementById('9').value;
-    var Fav10 = document.getElementById('10').value;
-    var Fav1Title = document.getElementById('90').value;
-    var Fav2Title = document.getElementById('91').value;
-    var Fav3Title = document.getElementById('92').value;
-    var Fav4Title = document.getElementById('93').value;
-    var Fav5Title = document.getElementById('94').value;
-    var Fav6Title = document.getElementById('95').value;
-    var Fav7Title = document.getElementById('96').value;
-    var Fav8Title = document.getElementById('97').value;
-    var Fav9Title = document.getElementById('98').value;
-    var Fav10Title = document.getElementById('99').value;
+    var Fav1 = document.getElementById('1').value
+        , Fav2 = document.getElementById('2').value
+        , Fav3 = document.getElementById('3').value
+        , Fav4 = document.getElementById('4').value
+        , Fav5 = document.getElementById('5').value
+        , Fav6 = document.getElementById('6').value
+        , Fav7 = document.getElementById('7').value
+        , Fav8 = document.getElementById('8').value
+        , Fav9 = document.getElementById('9').value
+        , Fav10 = document.getElementById('10').value
+        , Fav1Title = document.getElementById('90').value
+        , Fav2Title = document.getElementById('91').value
+        , Fav3Title = document.getElementById('92').value
+        , Fav4Title = document.getElementById('93').value
+        , Fav5Title = document.getElementById('94').value
+        , Fav6Title = document.getElementById('95').value
+        , Fav7Title = document.getElementById('96').value
+        , Fav8Title = document.getElementById('97').value
+        , Fav9Title = document.getElementById('98').value
+        , Fav10Title = document.getElementById('99').value;
     //takes the vars and stores the values in chrome storage
     browser.storage.local.set({
         storedMyFav1: Fav1
@@ -56,11 +51,11 @@ function save_options() {
         , storedMyFav3: Fav3
         , storedMyFav4: Fav4
         , storedMyFav5: Fav5
-        , storedMyFav1: Fav6
-        , storedMyFav2: Fav7
-        , storedMyFav3: Fav8
-        , storedMyFav4: Fav9
-        , storedMyFav5: Fav10
+        , storedMyFav6: Fav6
+        , storedMyFav7: Fav7
+        , storedMyFav8: Fav8
+        , storedMyFav9: Fav9
+        , storedMyFav10: Fav10
         , storedMyFav1Title: Fav1Title
         , storedMyFav2Title: Fav2Title
         , storedMyFav3Title: Fav3Title
@@ -127,3 +122,9 @@ function restore_options() {
             document.getElementById('99').value = items.storedMyFav10Title;
         });
 }
+//On DOM load run function restore_options - restore previous stored options
+document.addEventListener('DOMContentLoaded', restore_options);
+//On button click, run the save_options function
+document.getElementById('save').addEventListener('click', save_options);
+//save_options function  that gets values of input boxes, stores these in vars
+//and then stores them in chrome.storage as well as displaying a options saved status.
