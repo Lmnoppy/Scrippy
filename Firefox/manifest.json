@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Scrippy",
-    "version": "1.2",
+    "version": "1.3",
     "author": "@Lmnoppy",
     "homepage_url": "http://scrippy.click",
     "description": "Scrippy - Right click hacks...Ok not really it just stores statements for you in the browser using a simple (very basic) UI and Right click context menu. Allowing you to paste querries quickly",
