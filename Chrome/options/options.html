@@ -1,74 +1,113 @@
+<!-- 
+/***************************************************************************
+Copyright © 2016, 2017 Gary
+This file is part of Scrippy
+
+    Scrippy is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Scrippy is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+***************************************************************************/
+-->
 <!DOCTYPE html>
 <html lang="en" style="height: 600px;">
+
 <head>
     <meta charset="UTF-8">
     <title>Scrippy</title>
-    
     <!-- Start menu link code -->
     <link href="../css/modern-menu/modern-menu.css" type="text/css" rel="stylesheet">
     <!-- End menu link code -->
-    
-    </head>
-    
-    <body>
-    
-<!-- Start menu markup code -->
-        <div id="menu">
-            <ul class="menu-top">
-                <li>
-                    <a href="../popup/popup.html" class="menu-button"><span class="menu-label">Scrippy</span></a>
-                </li>
-                <li>
-                    <a href="../popup/sqlinjectionpayloads.html" class="menu-button"><span class="menu-label">SQL Payloads</span></a>
-                </li>
-                <li>
-                    <a href="../options/options.html" class="menu-button"><span class="menu-label">Options</span></a>
-                </li>
-                <li>
-                    <a href="#" class="menu-button menu-drop"><span class="menu-label">Social</span></a>
-                    <div class="menu-dropdown menu-dropdown6">
-                        <ul class="menu-sub">
-                            <li><a href="http://scrippy.click" class="menu-subbutton"><span class="menu-label">Scrippy Website</span></a></li>
-                            <li><a href="https://twitter.com/Lmnoppy" class="menu-subbutton"><img src="../css/modern-menu/images/twitter.png"><span class="menu-label">Twitter</span></a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </div>
-<!-- End menu markup code -->
+</head>
 
-<!--Start main content -->
-        <h4>Your Favorite SQL Statements</h4>
-        <div class="sqlDiv">
-            <label>Favorite 1 title: </label><input type="text" name="myFav1Title" value="" id="90">
-            <label>Payload: </label><input type="text" name="myFav1" value="" id="1"><br>
-
-            <label>Favorite 2 title: </label><input type="text" name="myFav2Title" value="" id="91">
-            <label>Payload: </label><input type="text" name="myFav2" value="" id="2"><br>
-
-            <label>Favorite 3 title: </label><input type="text" name="myFav3Title" value="" id="92">
-            <label>Payload: </label><input type="text" name="myFav3Title" value="" id="3"><br>
-
-            <label>Favorite 4 title: </label><input type="text" name="myFav4Title" value="" id="93">
-            <label>Payload: </label><input type="text" name="myFav4Title" value="" id="4"><br>
-
-            <label>Favorite 5 title: </label><input type="text" name="myFav5Title" value="" id="94">
-            <label>Payload: </label><input type="text" name="myFav4Title" value="" id="5"><br>
-        </div>
-        
-        <label id="savedFav"></label>
-        
-        <div id="status"></div>
-        
-        <button id="save">Save</button>
-    
+<body>
+    <!-- Start menu markup code -->
+    <div id="menu">
+        <ul class="menu-top">
+            <li> <a href="../popup/popup.html" class="menu-button"><span class="menu-label">Scrippy</span></a> </li>
+            <li> <a href="../popup/sqlinjectionpayloads.html" class="menu-button"><span class="menu-label">SQL Payloads</span></a> </li>
+            <li> <a href="../options/options.html" class="menu-button"><span class="menu-label">Options</span></a> </li>
+            <li> <a href="#" class="menu-button menu-drop"><span class="menu-label">Social</span></a>
+                <div class="menu-dropdown menu-dropdown6">
+                    <ul class="menu-sub">
+                        <li><a href="http://scrippy.click" class="menu-subbutton"><span class="menu-label">Scrippy Website</span></a></li>
+                        <li>
+                            <a href="https://twitter.com/Lmnoppy" class="menu-subbutton"><img src="../css/modern-menu/images/twitter.png"><span class="menu-label">Twitter</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- End menu markup code -->
+    <!--Start main content -->
+    <h4>Your Favorite Statements</h4>
+    <div class="sqlDiv">
+        <label>Favorite 1 title: </label>
+        <input type="text" name="myFav1Title" value="" id="90">
+        <label>Payload: </label>
+        <input type="text" name="myFav1" value="" id="1">
+        <br>
+        <label>Favorite 2 title: </label>
+        <input type="text" name="myFav2Title" value="" id="91">
+        <label>Payload: </label>
+        <input type="text" name="myFav2" value="" id="2">
+        <br>
+        <label>Favorite 3 title: </label>
+        <input type="text" name="myFav3Title" value="" id="92">
+        <label>Payload: </label>
+        <input type="text" name="myFav3" value="" id="3">
+        <br>
+        <label>Favorite 4 title: </label>
+        <input type="text" name="myFav4Title" value="" id="93">
+        <label>Payload: </label>
+        <input type="text" name="myFav4" value="" id="4">
+        <br>
+        <label>Favorite 5 title: </label>
+        <input type="text" name="myFav5Title" value="" id="94">
+        <label>Payload: </label>
+        <input type="text" name="myFav5" value="" id="5">
+        <br>
+        <label>Favorite 6 title: </label>
+        <input type="text" name="myFav6Title" value="" id="95">
+        <label>Payload: </label>
+        <input type="text" name="myFav6" value="" id="6">
+        <br>
+        <label>Favorite 7 title: </label>
+        <input type="text" name="myFav7Title" value="" id="96">
+        <label>Payload: </label>
+        <input type="text" name="myFav7" value="" id="7">
+        <br>
+        <label>Favorite 8 title: </label>
+        <input type="text" name="myFav8Title" value="" id="97">
+        <label>Payload: </label>
+        <input type="text" name="myFav8" value="" id="8">
+        <br>
+        <label>Favorite 9 title: </label>
+        <input type="text" name="myFav9Title" value="" id="98">
+        <label>Payload: </label>
+        <input type="text" name="myFav9" value="" id="9">
+        <br>
+        <label>Favorite 10 title: </label>
+        <input type="text" name="myFav10Title" value="" id="99">
+        <label>Payload: </label>
+        <input type="text" name="myFav10" value="" id="10">
+        <br> </div>
+    <label id="savedFav"></label>
+    <div id="status"></div>
+    <button id="save">Save</button>
     <!--end main content -->
-    
     <!--Start footer content -->
-    
     <!--end footer content -->
-    
     <script src="options.js"></script>
-    
-    </body>
+</body>
+
 </html>
