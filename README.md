@@ -8,6 +8,10 @@ Scrippy is currently in beta and falls under the [GPLv3](http://www.gnu.org/lice
 Yes updated payloads coming...one day, promise, feel free to submit some.
 
 ## Download and install
+
+ [![Firefox](firefoxpng.png)](https://addons.mozilla.org/en-US/firefox/addon/scrippy/) [![Chrome](chromelogo.png)](https://chrome.google.com/webstore/detail/scrippy/iihdoobgnenacmgkoghchfionpnleoea "Scrippy on Chrome Extension Store")
+
+
 Either go to the market places linked in the images above or download a compressed copy from top of the page. Instructions on how to install it manually can be found here (Still to be done)[Wiki](https://github.com/Lmnoppy/Scrippy/wiki "Scrippy Wiki").
 
 ## How to use Scrippy
