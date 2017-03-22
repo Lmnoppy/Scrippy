@@ -34,7 +34,7 @@ See below for the current road map and feel free to contact me with suggestions.
 Core code base needs to be refactored 
 
 #### UI Update:
-*   Colour Scheme (hex: TBD)
+*   Colour Scheme (hex: #157efb)
 *   Logo : Needs a logo
 *   Menu, popup and other UI designed better
 
