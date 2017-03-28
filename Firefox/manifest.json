@@ -12,14 +12,6 @@
         , "64": "icons/scrippylogo64.png"
         , "128": "icons/scrippylogo128.png"
     }
-    , "applications": {
-        "gecko": {
-            "id": "admin@spectreServices.uk"
-            , "strict_min_version": "42.0"
-            , "strict_max_version": "50.*"
-        }
-    }
-    , 
     , "permissions": [
         "contextMenus"
         , "tabs"
