@@ -23,7 +23,7 @@ This file is part of Scrippy
  ***************************************************************************/
 function save_options() {
     "use strict";
-    //vars contain the values on the input boxes
+        //vars contain the values on the input boxes
     var Fav1 = document.getElementById('1').value
         , Fav2 = document.getElementById('2').value
         , Fav3 = document.getElementById('3').value

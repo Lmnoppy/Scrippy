@@ -33,13 +33,8 @@ See below for the current road map and feel free to contact me with suggestions.
 #### Refactor code:
 Core code base needs to be refactored 
 
-#### UI Update:
-*   Colour Scheme (hex: TBD)
-*   Logo : Needs a logo
-*   Menu, popup and other UI designed better
-
 ## Next realease  
-Branch/code name: Spectre
+Branch/code name: timeyWimey
 
 #### Documentation:
 *   How to install
@@ -48,7 +43,7 @@ Branch/code name: Spectre
 
 #### SQL:
 *   Add more/better payloads to the popup menu
-*    Decide what payloads should be in "quick sql" 
+*   Decide what payloads should be in "quick sql" 
 
 #### XSS:
 *    Set Favorites in options/popup menu page
@@ -56,9 +51,6 @@ Branch/code name: Spectre
 
 #### Encoding:
 *   Extend to other types of encoding
-
-#### Encoding:
-*   Extend Favourites from 5 to 10
 
 ## Future plans
 
