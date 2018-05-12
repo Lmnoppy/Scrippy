@@ -19,6 +19,10 @@
     "storage",
     "https://ajax.googleapis.com/"
   ],
+  "background": {
+    "page": "index.html#/event-page",
+    "persistent": false
+  },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "browser_action": {
     "default_icon": {
@@ -28,8 +32,8 @@
       "64": "icons/scrippylogo64.png",
       "128": "icons/scrippylogo128.png"
     },
-    "default_title": "Scrippy",
-    "default_popup": "index.html"
+    "default_title": "pop",
+    "default_popup": "index.html#/popup"
   },
   "web_accessible_resources": [
     "sqlpayloads.json",
