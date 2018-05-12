@@ -32,7 +32,7 @@
       "64": "icons/scrippylogo64.png",
       "128": "icons/scrippylogo128.png"
     },
-    "default_title": "pop",
+    "default_title": "Scrippy",
     "default_popup": "index.html"
   },
   "web_accessible_resources": [

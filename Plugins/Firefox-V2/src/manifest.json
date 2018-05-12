@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Scrippy",
-  "version": "1.6",
+  "version": "2.0",
   "author": "@Lmnoppy",
   "homepage_url": "http://scrippy.click",
   "description": "Scrippy - Right click hacks: Ok, maybe not. Scrippy only stores statements for you in a simple (very basic) UI and Right click menu.",
@@ -35,6 +35,9 @@
     "default_title": "pop",
     "default_popup": "index.html"
   },
+  , "options_ui": {
+  "page": "index.html#/options"
+},
   "web_accessible_resources": [
     "sqlpayloads.json",
     "icons/scrippylogo.png",

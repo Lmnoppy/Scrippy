@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -7,7 +9,7 @@ import { AppComponent } from './app.component';
 import { OptionsComponent } from './options/options.component';
 import { PopupComponent } from './popup/popup.component';
 import { BackgroundComponent } from './background/background.component';
-import {NavbarComponent} from "../../../Firefox-X2/src/app/layout/navbar/navbar.component";
+import {NavbarComponent} from "./layout/navbar/navbar.component";
 
 
 @NgModule({
@@ -20,9 +22,12 @@ import {NavbarComponent} from "../../../Firefox-X2/src/app/layout/navbar/navbar.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot()
   ],
+  schemas: [ NO_ERRORS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
