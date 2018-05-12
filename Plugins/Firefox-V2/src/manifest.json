@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "name": "Scrippy",
+  "version": "1.6",
+  "author": "@Lmnoppy",
+  "homepage_url": "http://scrippy.click",
+  "description": "Scrippy - Right click hacks: Ok, maybe not. Scrippy only stores statements for you in a simple (very basic) UI and Right click menu.",
+  "icons": {
+    "16": "icons/scrippylogo16.png",
+    "32": "icons/scrippylogo32.png",
+    "48": "icons/scrippylogo48.png",
+    "64": "icons/scrippylogo64.png",
+    "128": "icons/scrippylogo128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/"
+  ],
+  "background": {
+    "page": "index.html#/event-page",
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/scrippylogo16.png",
+      "32": "icons/scrippylogo32.png",
+      "48": "icons/scrippylogo48.png",
+      "64": "icons/scrippylogo64.png",
+      "128": "icons/scrippylogo128.png"
+    },
+    "default_title": "pop",
+    "default_popup": "index.html"
+  },
+  "web_accessible_resources": [
+    "sqlpayloads.json",
+    "icons/scrippylogo.png",
+    "assets/css/*",
+    "assets/js/*",
+    "assets/fonts/*"
+  ]
+}
