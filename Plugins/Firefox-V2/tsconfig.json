@@ -8,6 +8,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "module": "system",
     "typeRoots": [
       "node_modules/@types",
       "node_modules/web-ext-types",
@@ -21,6 +22,9 @@
   "include": [
     "node_modules/angular-bootstrap-md/**/*.ts",
     "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 
 }
