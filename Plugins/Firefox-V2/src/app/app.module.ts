@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import {CollapseDirective, CollapseModule, MDBBootstrapModule, MDBRootModule} from 'angular-bootstrap-md';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,7 @@ import { OptionsComponent } from './options/options.component';
 import { PopupComponent } from './popup/popup.component';
 import { BackgroundComponent } from './background/background.component';
 import {NavbarComponent} from "./layout/navbar/navbar.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -23,6 +24,8 @@ import {NavbarComponent} from "./layout/navbar/navbar.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    CollapseModule.forRoot(),
     MDBBootstrapModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA],

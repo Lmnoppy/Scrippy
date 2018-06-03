@@ -1,17 +1,17 @@
 {
   "manifest_version": 2,
   "name": "Scrippy",
-  "version": "2.0",
+  "version": "2.0.0",
   "author": "@Lmnoppy",
   "homepage_url": "http://scrippy.click",
   "short_name": "Right click hacks",
-  "description": "Scrippy - Right click hacks: Ok, maybe not. Scrippy only stores statements for you in a simple (very basic) UI and Right click menu.",
+  "description": "Scrippy - Right click hacks: Ok, maybe not. Scrippy stores statements for you in a simple UI and Right click menu.",
   "icons": {
-    "16": "icons/scrippylogo16.png",
-    "32": "icons/scrippylogo32.png",
-    "48": "icons/scrippylogo48.png",
-    "64": "icons/scrippylogo64.png",
-    "128": "icons/scrippylogo128.png"
+    "16": "resources/icons/scrippylogo16.png",
+    "32": "resources/icons/scrippylogo32.png",
+    "48": "resources/icons/scrippylogo48.png",
+    "64": "resources/icons/scrippylogo64.png",
+    "128": "resources/icons/scrippylogo128.png"
   },
   "permissions": [
     "contextMenus",
@@ -21,24 +21,34 @@
     "https://ajax.googleapis.com/"
   ],
   "background": {
-    "page": "index.html#/event-page",
-    "persistent": false
+    "page": "index.html#background"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "browser_action": {
     "default_icon": {
-      "16": "icons/scrippylogo16.png",
-      "32": "icons/scrippylogo32.png",
-      "48": "icons/scrippylogo48.png",
-      "64": "icons/scrippylogo64.png",
-      "128": "icons/scrippylogo128.png"
+      "16": "resources/icons/scrippylogo16.png",
+      "32": "resources/icons/scrippylogo32.png",
+      "48": "resources/icons/scrippylogo48.png",
+      "64": "resources/icons/scrippylogo64.png",
+      "128": "resources/icons/scrippylogo128.png"
     },
     "default_title": "Scrippy",
     "default_popup": "index.html"
   },
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "resources/js/content.js"
+      ]
+    }
+  ],
   "options_ui": {
-  "page": "index.html#/options"
-},
+    "page": "index.html#options"
+  },
   "web_accessible_resources": [
     "sqlpayloads.json",
     "icons/scrippylogo.png",

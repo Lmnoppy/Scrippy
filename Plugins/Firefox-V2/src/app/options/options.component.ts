@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup, ReactiveFormsModule,} from "@angular/forms";
 
 @Component({
   selector: 'app-options',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OptionsComponent implements OnInit {
 
-  constructor() { }
+  optionsform: FormGroup;
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.optionsform = new FormGroup({
+
+        menuItem1: new FormGroup({
+          title1: new FormControl(),
+          payload1: new FormControl()
+        }),
+
+        menuItem2: new FormGroup({
+          title2: new FormControl(),
+          payload2: new FormControl()
+        })
+    })
+
   }
 
 }
