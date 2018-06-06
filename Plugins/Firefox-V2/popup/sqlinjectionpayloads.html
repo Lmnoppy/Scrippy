@@ -1,0 +1,88 @@
+<!-- 
+/***************************************************************************
+Copyright © 2016, 2017 Gary
+This file is part of Scrippy
+
+    Scrippy is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Scrippy is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+***************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrippy</title>
+    <!-- Start css link code -->
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap-4.0.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="../libs/style.css">
+    <link rel="stylesheet" type="text/css" href="../libs/DataTables/datatables.min.css"/>
+    <!-- End css link code -->
+</head>
+<style>
+
+</style>
+
+<body>
+
+<!-- Start Nav code -->
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal"><a class="navbar-brand" href="#">
+        <img src="../img/icons/scrippylogo.png" width="30" height="30" class="d-inline-block align-top" alt=""></a>Scrippy
+    </h5>
+
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="../popup/popup.html">Home</a>
+        <a class="p-2 text-dark" href="../popup/sqlinjectionpayloads.html">SQL Payloads</a>
+        <a class="p-2 text-dark" href="../options/options.html">Options</a>
+        <a class="p-2 text-dark" href="https://github.com/Lmnoppy/Scrippy/issues">Support</a>
+        <a class="p-2 text-dark" href="https://scrippy.click">Website</a>
+    </nav>
+    <!-- <a class="btn btn-outline-primary" href="https://scrippy.app">Scrippy.App</a> -->
+</div>
+<!-- End Nav code -->
+
+<!--Start main content -->
+<p><strong>To set your Favorites please go to the options tab</strong></p>
+<p align="justify"> <strong>Language</strong>: The database language(s) the query runs on.
+    <br> <strong>Version</strong>: The database version of the database(s) that the query works on.
+    <br> <strong>Payload</strong>: The database query statement.
+    <br> <strong>Description</strong>: Short description of what the payload does.
+    <br> </p>
+
+<section>
+    <table id="moreSQLPayloads" class="table table-striped table-bordered" width="100%" height="100%" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Language</th>
+            <th>version</th>
+            <th>Payload</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+    </table>
+</section>
+
+    <script type="text/javascript" src="../libs/jQuery-3.2.1/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../popup/popup.js"></script>
+    <script type="text/javascript" src="../options/options.js"></script>
+    <script type="text/javascript" src="../libs/bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="../libs/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../libs/DataTables/datatables.js"></script>
+
+
+    <!--End JS code links content -->
+</body>
+
+</html>
