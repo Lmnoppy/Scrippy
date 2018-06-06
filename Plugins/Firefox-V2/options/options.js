@@ -22,6 +22,7 @@ This file is part of Scrippy
  *Save these values in the chrome.storage api using sync
  ***************************************************************************/
 function save_options() {
+    console.log("save button clicked");
     "use strict";
     //vars contain the values on the input boxes
     var Fav1 = document.getElementById('1').value
@@ -45,6 +46,8 @@ function save_options() {
         , Fav9Title = document.getElementById('98').value
         , Fav10Title = document.getElementById('99').value;
     //takes the vars and stores the values in chrome storage
+    console.log("this is the value of Fav1", Fav1Title, Fav1);
+
     browser.storage.local.set({
         storedMyFav1: Fav1
         , storedMyFav2: Fav2
