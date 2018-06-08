@@ -34,7 +34,7 @@
     "scripts": [
       "background/scrippy.js",
       "libs/jQuery-3.2.1/jquery-3.2.1.js",
-      "libs/DataTables/datatables.js"
+      "libs/DataTables/datatables.min.js"
     ]
   },
   "content_scripts": [

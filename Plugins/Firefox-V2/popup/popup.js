@@ -19,7 +19,7 @@ var url = browser.extension.getURL("sqlpayloads.json");
 $(document).ready(function () {
     $('#moreSQLPayloads').DataTable({
         "ajax": url
-        , scrollY: '50vh'
+        , scrollY: '52vh'
         , scrollCollapse: true
     });
 });
