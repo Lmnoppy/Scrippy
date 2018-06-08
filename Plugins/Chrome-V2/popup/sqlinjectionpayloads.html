@@ -19,72 +19,78 @@ This file is part of Scrippy
 -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Scrippy</title>
-    <!-- Start menu link code -->
-    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
-    <link href="../css/datatables.css" rel="stylesheet" type="text/css" />
-    <!-- End menu link code -->
+    <!-- Start css link code -->
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap-4.0.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="../libs/bootstrap-4.0.0-dist/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="../libs/style.css">
+    <link rel="stylesheet" type="text/css" href="../libs/DataTables/datatables.min.css"/>
+    <!-- End css link code -->
 </head>
+<style>
+
+</style>
 
 <body>
-    <!-- Start menu markup code -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="#"> <img alt="Scrippy" src="../icons/scrippylogo.png" width="30" height="30" class="d-inline-block align-top">Scrippy </a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="../popup/popup.html">Home</a> </li>
-                    <li><a href="http://Scrippy.click">Website</a> </li>
-                    <li><a href="../popup/sqlinjectionpayloads.html">SQL Payloads</a> </li>
-                    <li><a href="../options/options.html">Options</a> </li>
-                    <li class="dropdown" class="dropdown" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Help &amp; Links <b class="caret"></b></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="https://github.com/Lmnoppy/Scrippy">Github</a> </li>
-                            <li><a href="https://github.com/Lmnoppy/Scrippy/issues">Report Issue</a> </li>
-                            <li><a href="https://twitter.com/LmnOppy">Contact Me</a> </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
+
+<!-- Start Nav code -->
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal"><a class="navbar-brand" href="#">
+        <img src="../img/icons/scrippylogo.png" width="30" height="30" class="d-inline-block align-top" alt=""></a>Scrippy
+    </h5>
+
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="../popup/popup.html">Home</a>
+        <a class="p-2 text-dark" href="../popup/sqlinjectionpayloads.html">SQL Payloads</a>
+        <a class="p-2 text-dark" href="../options/options.html">Options</a>
+        <a class="p-2 text-dark" href="https://github.com/Lmnoppy/Scrippy/issues">Support</a>
+        <a class="p-2 text-dark" href="http://scrippy.click">Website</a>
     </nav>
-    <!-- End menu markup code -->
-    <!--Start main content -->
-    <p><strong>To set your Favorites please go to the options tab</strong></p>
-    <p align="justify"> <strong>Language</strong>: The database language(s) the query runs on.
-        <br> <strong>Version</strong>: The database version of the database(s) that the query works on.
-        <br> <strong>Payload</strong>: The database query statement.
-        <br> <strong>Description</strong>: Short description of what the payload does.
-        <br> </p>
-    <section>
-        <table id="moreSQLPayloads" class="table table-striped table-bordered" width="100%" height="100%" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Language</th>
-                    <th>version</th>
-                    <th>Payload</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-        </table>
-    </section>
-    <!--end main content -->
-    <!--Start footer content -->
-    <!--end footer content -->
-    <!--JS code links content -->
-    <script type="text/javascript" src="../js/datatables.js"></script>
-    <script type="text/javascript" src="popup.js"></script>
-    <script src="../options/options.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <!--End JS code links content -->
+    <!-- <a class="btn btn-outline-primary" href="https://scrippy.app">Scrippy.App</a> -->
+</div>
+<!-- End Nav code -->
+
+<!--Start main content -->
+<p>
+    <button class="btn btn-primary btn-sm tableInfoBut" type="button" data-toggle="collapse" data-target="#collapseInfo"
+            aria-expanded="false" aria-controls="collapseInfo">Table information</button>
+</p>
+<div class="collapse collapseTableInfo" id="collapseInfo">
+    <div class="card card-body">
+        <p align="justify"><strong>Language</strong>: The database language(s) the query runs on.
+            <br> <strong>Version</strong>: The database version of the database(s) that the query works on.
+            <br> <strong>Payload</strong>: The database query statement.
+            <br> <strong>Description</strong>: Short description of what the payload does.
+            <br> <strong>To set your Favorites please go to the options tab</strong>
+        </p>
+    </div>
+</div>
+
+<section>
+    <table id="moreSQLPayloads" class="table table-striped table-bordered" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Language</th>
+            <th>version</th>
+            <th>Payload</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+    </table>
+</section>
+
+<script type="text/javascript" src="../libs/jQuery-3.2.1/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../popup/popup.js"></script>
+<script type="text/javascript" src="../options/options.js"></script>
+<script type="text/javascript" src="../libs/bootstrap-4.0.0-dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="../libs/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../libs/DataTables/datatables.min.js"></script>
+
+
+<!--End JS code links content -->
 </body>
 
 </html>
