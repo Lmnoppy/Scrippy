@@ -1,0 +1,107 @@
+<!-- 
+/***************************************************************************
+Copyright © 2016, 2017 Gary
+This file is part of Scrippy
+
+    Scrippy is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Scrippy is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>
+***************************************************************************/
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 600px;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scrippy</title>
+    <!-- Start menu link code -->
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="../css/datatables.css" rel="stylesheet" type="text/css" />
+    <!-- End menu link code -->
+</head>
+
+<body>
+    <!-- Start menu markup code -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="#"> <img alt="Scrippy" src="../icons/scrippylogo.png" width="30" height="30" class="d-inline-block align-top">Scrippy </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="../popup/popup.html">Home</a> </li>
+                    <li><a href="http://Scrippy.click">Website</a> </li>
+                    <li><a href="../popup/sqlinjectionpayloads.html">SQL Payloads</a> </li>
+                    <li><a href="../options/options.html">Options</a> </li>
+                    <li class="dropdown" class="dropdown" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Help &amp; Links <b class="caret"></b></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="https://github.com/Lmnoppy/Scrippy">Github</a> </li>
+                            <li><a href="https://github.com/Lmnoppy/Scrippy/issues">Report Issue</a> </li>
+                            <li><a href="https://twitter.com/LmnOppy">Contact Me</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- End menu markup code -->
+    <!--Start main content -->
+    <h4>Your Favorite Statements</h4>
+    <div class="sqlDiv">
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav1Title" class="form-control" placeholder="Menu Title" id="90"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav1" class="form-control" placeholder="Payload" id="1"> </div>
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav2Title" class="form-control" placeholder="Menu Title" id="91"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav2" class="form-control" placeholder="Payload" id="2"> </div>
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav3Title" class="form-control" placeholder="Menu Title" id="92"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav3" class="form-control" placeholder="Payload" id="3"> </div>
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav4Title" class="form-control" placeholder="Menu Title" id="93"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav4" class="form-control" placeholder="Payload" id="4"> </div>
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav5Title" class="form-control" placeholder="Menu Title" id="94"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav5" class="form-control" placeholder="Payload" id="5"> </div>
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav6Title" class="form-control" placeholder="Menu Title" id="95"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav6" class="form-control" placeholder="Payload" id="6"> </div>
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav7Title" class="form-control" placeholder="Menu Title" id="96"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav7" class="form-control" placeholder="Payload" id="7"> </div>
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav8Title" class="form-control" placeholder="Menu Title" id="97"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav8" class="form-control" placeholder="Payload" id="8"> </div>
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav9Title" class="form-control" placeholder="Menu Title" id="98"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav9" class="form-control" placeholder="Payload" id="9"> </div>
+        <div class="input-group optionsInputPadding"> <span class="input-group-addon" id="basic-addon1">Title:</span>
+            <input type="text" name="myFav10Title" class="form-control" placeholder="Menu Title" id="99"> <span class="input-group-addon" id="basic-addon1">Payload:</span>
+            <input type="text" name="myFav10" class="form-control" placeholder="Payload" id="10"> </div>
+    </div>
+    <label id="savedFav"></label>
+    <div id="status"></div>
+    <button id="save" type="button" class="btn btn-primary btn-block">Save Favourites</button>
+    <!--Start footer content -->
+    <!--end footer content -->
+    <!--JS code links content -->
+    <script type="text/javascript" src="../js/datatables.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <script src="options.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <!--End JS code links content -->
+</body>
+
+</html>
