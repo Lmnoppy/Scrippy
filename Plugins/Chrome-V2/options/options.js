@@ -74,6 +74,33 @@ function save_options() {
             status.textContent = '';
         }, 750);
     });
+    location.reload(true)
+}
+function clear_options() {
+    chrome.storage.local.set({
+        storedMyFav1: ''
+        , storedMyFav2: ''
+        , storedMyFav3: ''
+        , storedMyFav4: ''
+        , storedMyFav5: ''
+        , storedMyFav6: ''
+        , storedMyFav7: ''
+        , storedMyFav8: ''
+        , storedMyFav9: ''
+        , storedMyFav10: ''
+        , storedMyFav1Title: ''
+        , storedMyFav2Title: ''
+        , storedMyFav3Title: ''
+        , storedMyFav4Title: ''
+        , storedMyFav5Title: ''
+        , storedMyFav6Title: ''
+        , storedMyFav7Title: ''
+        , storedMyFav8Title: ''
+        , storedMyFav9Title: ''
+        , storedMyFav10Title: ''
+    });
+    location.reload(true)
+
 }
 // Restores values stored in storage.
 function restore_options() {
@@ -128,3 +155,5 @@ document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);
 //save_options function  that gets values of input boxes, stores these in vars
 //and then stores them in chrome.storage as well as displaying a options saved status.
+//On Click clear all field
+document.getElementById('clear').addEventListener('click', clear_options);
