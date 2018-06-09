@@ -1,20 +1,20 @@
 /***************************************************************************
-Copyright © 2016, 2017 Gary
-This file is part of Scrippy
+ Copyright © 2016, 2017 Gary
+ This file is part of Scrippy
 
-    Scrippy is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+ Scrippy is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
 
-    Scrippy is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+ Scrippy is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>
-***************************************************************************/
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>
+ ***************************************************************************/
 /***************************************************************************
  Options menu
 
@@ -22,6 +22,7 @@ This file is part of Scrippy
  *Save these values in the chrome.storage api using sync
  ***************************************************************************/
 function save_options() {
+    console.log("save button clicked");
     "use strict";
     //vars contain the values on the input boxes
     var Fav1 = document.getElementById('1').value
@@ -45,6 +46,8 @@ function save_options() {
         , Fav9Title = document.getElementById('98').value
         , Fav10Title = document.getElementById('99').value;
     //takes the vars and stores the values in chrome storage
+    console.log("this is the value of Fav1", Fav1Title, Fav1);
+
     browser.storage.local.set({
         storedMyFav1: Fav1
         , storedMyFav2: Fav2
@@ -75,6 +78,34 @@ function save_options() {
         }, 750);
     });
 }
+
+function clear_options() {
+    browser.storage.local.set({
+        storedMyFav1: ''
+        , storedMyFav2: ''
+        , storedMyFav3: ''
+        , storedMyFav4: ''
+        , storedMyFav5: ''
+        , storedMyFav6: ''
+        , storedMyFav7: ''
+        , storedMyFav8: ''
+        , storedMyFav9: ''
+        , storedMyFav10: ''
+        , storedMyFav1Title: ''
+        , storedMyFav2Title: ''
+        , storedMyFav3Title: ''
+        , storedMyFav4Title: ''
+        , storedMyFav5Title: ''
+        , storedMyFav6Title: ''
+        , storedMyFav7Title: ''
+        , storedMyFav8Title: ''
+        , storedMyFav9Title: ''
+        , storedMyFav10Title: ''
+    });
+    location.reload(true)
+
+}
+
 // Restores values stored in storage.
 function restore_options() {
     browser.storage.local.get({
@@ -122,9 +153,12 @@ function restore_options() {
             document.getElementById('99').value = items.storedMyFav10Title;
         });
 }
+
 //On DOM load run function restore_options - restore previous stored options
 document.addEventListener('DOMContentLoaded', restore_options);
 //On button click, run the save_options function
 document.getElementById('save').addEventListener('click', save_options);
 //save_options function  that gets values of input boxes, stores these in vars
 //and then stores them in chrome.storage as well as displaying a options saved status.
+//On Click clear all field
+document.getElementById('clear').addEventListener('click', clear_options);

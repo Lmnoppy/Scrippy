@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Scrippy",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "@Lmnoppy",
   "homepage_url": "http://scrippy.click",
   "description": "Scrippy - Right click hacks: its not, it just stores statements for you in a simple (very basic) UI and Right click context menu.",
@@ -34,7 +34,7 @@
     "scripts": [
       "background/scrippy.js",
       "libs/jQuery-3.2.1/jquery-3.2.1.js",
-      "libs/DataTables/datatables.js"
+      "libs/DataTables/datatables.min.js"
     ]
   },
   "content_scripts": [
@@ -54,7 +54,7 @@
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "web_accessible_resources": [
     "sqlpayloads.json",
-    "icons/scrippylogo.png"
+    "img/icons/scrippylogo.png"
   ]
 }
 

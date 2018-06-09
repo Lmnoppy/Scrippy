@@ -5,4 +5,14 @@ body {
 
 .optionsInputPadding  {
     margin-bottom: 4px;
+    margin-left: 3px;
+}
+
+.collapseTableInfo{
+    width: 770px;
+    margin: 4px;
+}
+
+.tableInfoBut{
+    margin-left: 3px;
 }
