@@ -20,14 +20,12 @@ Either go to the market places linked in the images above or download a compress
 // The long and short of it is, right click an input box on a website, like username input or password input select scrippy -> then what ever option you would like - simple. 
 
 ## Current Issues
-The current context menu does not allow for Scrippy to be used on the URL bar.
+The current context menu does not allow for Scrippy to be used on the URL bar. This is due to the limitation/sandbox of the web style plugins. 
 
 Seems to be a bug when right clicking some input fields, the quick selections and favs do not work. [#22](https://github.com/Lmnoppy/Scrippy/issues/22 "On some input... #22")  
 
 ## Help
-Although i am slowly building this myself as a learning experience, i'd appreciate help in updating the payload files and would really, really like a new UI however, i just can't do it. Good UI design is just beyond me.
-
-See below for the current road map and feel free to contact me with suggestions. 
+Although i am slowly building this myself as a learning experience, i'd appreciate help in pull requests, comments on the code, better ways to do things etc...
 
 ## On Going work
 
