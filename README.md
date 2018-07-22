@@ -17,6 +17,7 @@ Either go to the market places linked in the images above or download a compress
 ## How to use Scrippy
 
 // To be done, would be better if it was in the wiki
+// The long and short of it is, right click an input box on a website, like username input or password input select scrippy -> then what ever option you would like - simple. 
 
 ## Current Issues
 The current context menu does not allow for Scrippy to be used on the URL bar.
