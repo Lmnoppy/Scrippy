@@ -53,10 +53,8 @@ Branch/code name: timeyWimey
 
 ## Future plans
 
-#### Desktop app intergration:
-TBD
-
 #### SQL Map intergration:
+ON HOLD - Due to the sandbox that web extensions are placed in.
 Branch/code name: RedRadius
 
 *    Right click on input -> SQL Map here -> open SQL mapper - With current element and basic command inputed.
