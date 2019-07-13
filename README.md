@@ -1,3 +1,6 @@
+# NO LONGER IN DEVELOPMENT
+This was a small project i made to help my self learn JS. Since leaving education and starting full time employment, i am not able to maintain this project. I will be removing the plugins from the Mozilla and Chrome stores, however, the code will remain on GitHub. it needs to be updated in places and extended in others. Please feel free to fork, clone, create Pull requests or do what ever with the code.   
+
 ## Scrippy
 Scrippy is a Chrome and Firefox browser add-on that stores SQL statements to aid in the testing of websites for code injection vulnerabilities. Think cheat sheets but all you do is right click for them.  
 
